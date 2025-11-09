@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Spicy Chicken Tacos",
+    "category": "Our Food",
+    "image": "https://images.unsplash.com/file-1715651741414-859baba4300dimage?auto=format&fit=crop&q=60&w=416&dpr=2",
+    "aspect": "aspect-[3/4]"
+  },
+  {
+    "title": "Friends enjoying a sunny day",
+    "category": "Happy Customers",
+    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+    "aspect": "aspect-video"
+  },
+  {
+    "title": "Our vibrant food truck setup",
+    "category": "Events",
+    "image": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d",
+    "aspect": "aspect-square"
+  },
+  {
+    "title": "Delicious loaded fries",
+    "category": "Our Food",
+    "image": "https://media.istockphoto.com/id/2198000985/photo/youth-enjoy-tasty-street-food-while-laughing-and-socializing-in-the-vibrant-streets-of-sydney.jpg?s=612x612&w=0&k=20&c=x4ZPvrGX5qqRVzaqcLx3rJHtnGIZl8WunFqBKap473w=",
+    "aspect": "aspect-square"
+  },
+  {
+    "title": "Family sharing a meal",
+    "category": "Happy Customers",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+    "aspect": "aspect-[3/4]"
+  }
+]

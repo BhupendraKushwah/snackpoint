@@ -1,0 +1,147 @@
+[
+    {
+        "name": "Pizza",
+        "items": [
+            {
+                "name": "Bread Pizza",
+                "price": 40,
+                "image": "https://images.unsplash.com/photo-1601924638867-3ec3c3a4c44d"
+            },
+            {
+                "name": "Italian Double Cheese Pizza",
+                "price": 50,
+                "image": "https://images.unsplash.com/photo-1601924928376-3a53b7ebd8e0"
+            }
+        ]
+    },
+    {
+        "name": "Sandwich",
+        "items": [
+            {
+                "name": "Veg Sandwich",
+                "price": 30,
+                "image": "https://images.unsplash.com/photo-1601050690597-1c2ae76b25c5"
+            },
+            {
+                "name": "Aloo Mutter Sandwich",
+                "price": 30,
+                "image": "https://images.unsplash.com/photo-1550317138-10000687a72b"
+            },
+            {
+                "name": "Aloo Mutter Cheese Sandwich",
+                "price": 40,
+                "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f"
+            }
+        ]
+    },
+    {
+        "name": "Vada Pav",
+        "items": [
+            {
+                "name": "Plain Vada Pav",
+                "price": 20,
+                "image": "https://images.unsplash.com/photo-1626082927389-8b36a5adf5f9"
+            },
+            {
+                "name": "Butter Vada Pav",
+                "price": 25,
+                "image": "https://images.unsplash.com/photo-1626082927597-9d68cfde7b3d"
+            },
+            {
+                "name": "Cheese Butter Vada Pav",
+                "price": 30,
+                "image": "https://images.unsplash.com/photo-1626082927762-5e12d0a5020a"
+            }
+        ]
+    },
+    {
+        "name": "Dabeli",
+        "items": [
+            {
+                "name": "Plain Dabeli",
+                "price": 20,
+                "image": "https://images.unsplash.com/photo-1617196034796-73aa98e6f5ad"
+            },
+            {
+                "name": "Butter Dabeli",
+                "price": 25,
+                "image": "https://images.unsplash.com/photo-1623870394984-3e8b05a5c1b1"
+            },
+            {
+                "name": "Cheese / Paneer Dabeli",
+                "price": 30,
+                "image": "https://images.unsplash.com/photo-1626082927653-66f1c9a1d06b"
+            }
+        ]
+    },
+    {
+        "name": "Burger",
+        "items": [
+            {
+                "name": "Veg Burger",
+                "price": 20,
+                "image": "https://images.unsplash.com/photo-1606755962773-0e6f23a8b56b"
+            },
+            {
+                "name": "Tikki Burger",
+                "price": 25,
+                "image": "https://images.unsplash.com/photo-1626082927590-013fa16b7a21"
+            },
+            {
+                "name": "Paneer Burger",
+                "price": 30,
+                "image": "https://images.unsplash.com/photo-1603064752734-3a4b3aafbd34"
+            },
+            {
+                "name": "Cheese Burger",
+                "price": 30,
+                "image": "https://images.unsplash.com/photo-1551782450-17144efb9c50"
+            },
+            {
+                "name": "Double Cheese Burger",
+                "price": 35,
+                "image": "https://images.unsplash.com/photo-1626082927692-7538f4c1a7dc"
+            }
+        ]
+    },
+    {
+        "name": "Pav Bhaji",
+        "items": [
+            {
+                "name": "Plain Pav Bhaji",
+                "price": 30,
+                "image": "https://images.unsplash.com/photo-1627308595190-bb7d31574d62"
+            },
+            {
+                "name": "Butter Pav Bhaji",
+                "price": 40,
+                "image": "https://images.unsplash.com/photo-1627308595178-620e4b0dfb4f"
+            },
+            {
+                "name": "Paneer Pav Bhaji",
+                "price": 50,
+                "image": "https://images.unsplash.com/photo-1627308595260-15d9aede4b34"
+            }
+        ]
+    },
+    {
+        "name": "Maska Bun",
+        "items": [
+            {
+                "name": "Butter Maska Bun",
+                "price": 20,
+                "image": "https://images.unsplash.com/photo-1601050690597-1c2ae76b25c5"
+            },
+            {
+                "name": "Paneer Maska Bun",
+                "price": 30,
+                "image": "https://images.unsplash.com/photo-1626082927713-5c7df22b50af"
+            },
+            {
+                "name": "Cheese Maska Bun",
+                "price": 40,
+                "image": "https://images.unsplash.com/photo-1626082927762-5e12d0a5020a"
+            }
+        ]
+    }
+]

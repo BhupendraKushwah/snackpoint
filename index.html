@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnackPoint - Street Food with Style</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="./assets/fonts/poppins.css" rel="stylesheet" />
+    <script src="./assets/js/tailwind.min.js"></script>
+    <script src='./assets/js/main.js'></script>
+</head>
+
+<body class="bg-light font-sans text-gray-800">
+    <!-- Navbar -->
+   <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="h-screen flex flex-col items-center justify-center text-center bg-cover bg-center relative"
+        style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1750767397012-3413ba4fdbc7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=906');">
+        <div class="text-white z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">The Real Taste of the Streets 🍟</h1>
+            <p class="text-lg md:text-xl mb-6">Hot, Fresh & Flavorful — every bite tells a story!</p>
+            <a href="#menu"
+                class="bg-primary hover:bg-secondary text-white font-bold px-8 py-3 rounded-full transition-all duration-300 hover:scale-110">
+                Explore Menu
+            </a>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+   <section id="specials" class="py-16 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-10 text-gray-800 fade-in">Our Best Sellers 🔥</h2>
+  <div id="specials-container" class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto"></div>
+</section>
+
+    <!-- Menu Flipbook Section -->
+    <section id="menu" class="py-16 bg-light text-center">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800 fade-in">Our Menu 📖</h2>
+        <p class="text-gray-500 mb-10 fade-in">Tap to open and flip through our menu pages.</p>
+        <div class="max-w-4xl mx-auto">
+            <iframe src="assets/images/menu/menu.pdf" class="w-full h-[600px] rounded-xl shadow-md fade-in"></iframe>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 px-6 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-10 text-gray-800 fade-in">Street Vibes 🍴</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto fade-in">
+            <img src="https://media.istockphoto.com/id/2132903895/photo/a-sandwich-is-on-a-white-plate-with-a-red-rim.jpg?s=612x612&w=0&k=20&c=iOd3JhymEkbNO0LIIQN5H3Xm5H90UP9iXFgvwRE-EDQ="
+                class="rounded-xl shadow-md hover:scale-105 transition">
+            <img src="https://media.istockphoto.com/id/1049985076/photo/dabeli.jpg?s=1024x1024&w=is&k=20&c=ru2PKaEWfAX9e2iZ5sTfHs3dyceu_B3fwu_oBrD6Xfk="
+                class="rounded-xl shadow-md hover:scale-105 transition">
+            <img src="https://media.istockphoto.com/id/2214250111/photo/vada-pav-the-true-taste-of-mumbai.jpg?s=1024x1024&w=is&k=20&c=yF35tzp3-C3DBYSXsGrPRraht0TOtgxYpxpiRl58fc8="
+                class="rounded-xl shadow-md hover:scale-105 transition">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnJTIwYnVyZ2VyfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
+                class="rounded-xl shadow-md hover:scale-105 transition">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

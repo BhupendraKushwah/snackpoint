@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Butter Vada Pav",
+        "price": 25,
+        "image": "https://images.unsplash.com/photo-1626082927597-9d68cfde7b3d"
+    },
+    {
+        "name": "Butter Dabeli",
+        "price": 25,
+        "image": "https://images.unsplash.com/photo-1623870394984-3e8b05a5c1b1"
+    },
+    {
+        "name": "Veg Burger",
+        "price": 20,
+        "image": "https://images.unsplash.com/photo-1606755962773-0e6f23a8b56b"
+    }
+]

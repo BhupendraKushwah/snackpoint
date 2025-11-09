@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Shri Mahakaleshwar Vada Pav & Snacks</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="./assets/fonts/poppins.css" rel="stylesheet" />
+    <script src="./assets/js/tailwind.min.js"></script>
+    <script src='./assets/js/main.js'></script>
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(180deg, #fff7ed, #ffffff);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .category-btn.active {
+            background-color: #f97316;
+            color: white;
+            box-shadow: 0 4px 10px rgba(249, 115, 22, 0.4);
+        }
+
+        .menu-card {
+            transition: all 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.25);
+        }
+
+        .menu-img {
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-light font-sans text-gray-800">
+    <div id="navbar"></div>
+    <main class="flex-grow">
+        <div class="container mx-auto px-6 py-12 md:py-16">
+            <!-- Page Header -->
+            <div class="text-center mb-10">
+                <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-3 tracking-tight">
+                    Taste the Streets 🍔
+                </h1>
+                <p class="text-lg text-gray-600">
+                    Explore our delicious range of street food classics, freshly made with love!
+                </p>
+            </div>
+
+            <!-- Category Filters -->
+            <div id="categoryFilters" class="flex flex-wrap justify-center gap-3 mb-12"></div>
+
+            <!-- Menu Sections -->
+            <div id="menuContainer" class="space-y-16"></div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script>
+        async function loadMenu() {
+            try {
+                const response = await fetch("./data/menu.json");
+                const data = await response.json();
+
+                const categories = data.map((section) => section.name);
+                const categoryContainer = document.getElementById("categoryFilters");
+                const menuContainer = document.getElementById("menuContainer");
+
+                // Create category buttons
+                const allBtn = document.createElement("button");
+                allBtn.textContent = "All";
+                allBtn.className =
+                    "category-btn active flex items-center justify-center rounded-full bg-orange-500 px-5 py-2 text-sm font-semibold text-white shadow hover:bg-orange-600 transition";
+                allBtn.onclick = () => renderMenu("All");
+                categoryContainer.appendChild(allBtn);
+
+                categories.forEach((category) => {
+                    const btn = document.createElement("button");
+                    btn.textContent = category;
+                    btn.className =
+                        "category-btn flex items-center justify-center rounded-full bg-white border border-orange-300 px-5 py-2 text-sm font-medium text-orange-700 shadow-sm hover:bg-orange-100 transition";
+                    btn.onclick = () => renderMenu(category);
+                    categoryContainer.appendChild(btn);
+                });
+
+                // Render menu
+                function renderMenu(filter) {
+                    menuContainer.innerHTML = "";
+                    document.querySelectorAll(".category-btn").forEach((btn) =>
+                        btn.classList.remove("active")
+                    );
+                    const activeBtn = Array.from(document.querySelectorAll(".category-btn"))
+                        .find((b) => b.textContent === filter);
+                    if (activeBtn) activeBtn.classList.add("active");
+
+                    const filteredSections =
+                        filter === "All"
+                            ? data
+                            : data.filter((section) => section.name === filter);
+
+                    filteredSections.forEach((section) => {
+                        const sectionDiv = document.createElement("div");
+                        sectionDiv.className = "fade-in";
+                        sectionDiv.innerHTML = `
+              <h2 class="text-3xl font-bold text-gray-800 pb-6 border-b border-gray-200 inline-block">${section.name}</h2>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-6">
+                ${section.items
+                                .map(
+                                    (item) => `
+                    <div class="menu-card flex flex-col rounded-2xl bg-white overflow-hidden shadow-md">
+                      <img src="${item.image}" alt="${item.name}" class="menu-img">
+                      <div class="p-5 flex flex-col justify-between flex-grow">
+                        <div>
+                          <p class="text-lg font-semibold text-gray-800">${item.name}</p>
+                          <p class="text-sm text-gray-500 mt-1">Crispy, fresh and full of flavor.</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                          <p class="text-lg font-bold text-orange-600">₹${item.price}</p>
+                        </div>
+                      </div>
+                    </div>`
+                                )
+                                .join("")}
+              </div>
+            `;
+                        menuContainer.appendChild(sectionDiv);
+                    });
+                }
+
+                renderMenu("All");
+            } catch (error) {
+                console.error("Error loading menu:", error);
+            }
+        }
+
+        loadMenu();
+    </script>
+</body>
+
+</html>
