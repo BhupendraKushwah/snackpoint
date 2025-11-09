@@ -2,16 +2,19 @@
     {
         "name": "Butter Vada Pav",
         "price": 25,
-        "image": "https://images.unsplash.com/photo-1626082927597-9d68cfde7b3d"
+        "image": "https://images.pexels.com/photos/17433337/pexels-photo-17433337.jpeg",
+        "description": "Soft pav stuffed with a spicy potato vada, toasted in rich butter for that irresistible street-style flavor."
     },
     {
         "name": "Butter Dabeli",
         "price": 25,
-        "image": "https://images.unsplash.com/photo-1623870394984-3e8b05a5c1b1"
+        "image": "https://media.istockphoto.com/id/1304537317/photo/indian-fast-food-wara-paw-white-background.jpg?b=1&s=612x612&w=0&k=20&c=AA_b3uOnzkxrQc_oGrqlD1gNoRusx_sgnSbCSUi8NxM=",
+        "description": "A flavorful mix of mashed potatoes, tangy chutneys, and crunchy peanuts sandwiched in buttered pav."
     },
     {
-        "name": "Veg Burger",
-        "price": 20,
-        "image": "https://images.unsplash.com/photo-1606755962773-0e6f23a8b56b"
+        "name": "Cheese Burger",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1550317138-10000687a72b",
+        "description": "Crispy veggie patty with fresh lettuce, tomato, and creamy sauce in a soft toasted bun."
     }
 ]

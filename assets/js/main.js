@@ -40,16 +40,22 @@ document.addEventListener("DOMContentLoaded", async () => {
   const includeFooter = document.getElementById("footer");
 
   if (includeNavbar) {
-    let navbarPath = (window.location.pathname=='/')?'components/navbar.html':'../components/navbar.html'
+    let navbarPath = (window.location.pathname == '/') ? 'components/navbar.html' : '../components/navbar.html'
     fetch(navbarPath)
       .then(response => response.text())
       .then(data => {
         includeNavbar.innerHTML = data;
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
       })
       .catch(error => console.error("Navbar load error:", error));
   }
   if (includeFooter) {
-    let footerPath = (window.location.pathname=='/')?'components/footer.html':'../components/footer.html'
+    let footerPath = (window.location.pathname == '/') ? 'components/footer.html' : '../components/footer.html'
     fetch(footerPath)
       .then(response => response.text())
       .then(data => {

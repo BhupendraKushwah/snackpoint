@@ -1,40 +1,54 @@
 <div class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
-    <div class="flex justify-center px-4 sm:px-8">
-        <div class="w-full">
-            <header class="flex items-center justify-between whitespace-nowrap py-4">
-                <div class="flex items-center gap-3 text-text-light dark:text-text-dark">
-                    <div class="size-8 text-primary">
-                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <h2 class="font-display text-xl font-bold leading-tight tracking-tighter">SnackPoint
-                    </h2>
-                </div>
-                <div class="hidden md:flex flex-1 justify-end items-center gap-8">
-                    <nav class="flex items-center gap-8">
-                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-                            href="/">Home</a>
-                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-                            href="/menu">Menu</a>
-                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-                            href="/gallery">Gallery</a>
-                        <button
-                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-wide shadow-soft hover:scale-105 transition-transform"
-                            onclick="window.location.href='/contact'">
-                            Contact Us
-                        </button>
-                    </nav>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
-                        <span class="material-symbols-outlined text-text-light dark:text-text-dark">menu</span>
-                    </button>
-                </div>
-            </header>
+  <div class="flex justify-center px-4 sm:px-8">
+    <div class="w-full">
+      <header class="flex items-center justify-between whitespace-nowrap py-4">
+        <!-- Logo -->
+        <div class="flex items-center gap-3 text-text-light dark:text-text-dark">
+          <div class="size-8 text-primary">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="font-display text-xl font-bold leading-tight tracking-tighter">
+            SnackPoint
+          </h2>
         </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex flex-1 justify-end items-center gap-8">
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/">Home</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/menu">Menu</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="/gallery">Gallery</a>
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-wide shadow-soft hover:scale-105 transition-transform"
+            onclick="window.location.href='/contact'">
+            Contact Us
+          </button>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+        <button id="menu-btn" class="p-2 rounded-full hover:bg-gray-100 transition duration-300">
+  &#9776;
+</button>
+        </div>
+      </header>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu"
+        class="hidden flex-col items-start bg-background-light dark:bg-background-dark rounded-2xl shadow-lg p-4 space-y-4 md:hidden transition-all duration-300 ease-in-out">
+        <a class="block text-sm font-medium hover:text-primary transition-colors" href="/">Home</a>
+        <a class="block text-sm font-medium hover:text-primary transition-colors" href="/menu">Menu</a>
+        <a class="block text-sm font-medium hover:text-primary transition-colors" href="/gallery">Gallery</a>
+        <button
+          class="w-full flex justify-center items-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold hover:scale-105 transition-transform"
+          onclick="window.location.href='/contact'">
+          Contact Us
+        </button>
+      </div>
     </div>
+  </div>
 </div>
+

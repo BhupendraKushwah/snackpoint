@@ -1,147 +1,169 @@
 [
-    {
-        "name": "Pizza",
-        "items": [
-            {
-                "name": "Bread Pizza",
-                "price": 40,
-                "image": "https://images.unsplash.com/photo-1601924638867-3ec3c3a4c44d"
-            },
-            {
-                "name": "Italian Double Cheese Pizza",
-                "price": 50,
-                "image": "https://images.unsplash.com/photo-1601924928376-3a53b7ebd8e0"
-            }
-        ]
-    },
-    {
-        "name": "Sandwich",
-        "items": [
-            {
-                "name": "Veg Sandwich",
-                "price": 30,
-                "image": "https://images.unsplash.com/photo-1601050690597-1c2ae76b25c5"
-            },
-            {
-                "name": "Aloo Mutter Sandwich",
-                "price": 30,
-                "image": "https://images.unsplash.com/photo-1550317138-10000687a72b"
-            },
-            {
-                "name": "Aloo Mutter Cheese Sandwich",
-                "price": 40,
-                "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f"
-            }
-        ]
-    },
-    {
-        "name": "Vada Pav",
-        "items": [
-            {
-                "name": "Plain Vada Pav",
-                "price": 20,
-                "image": "https://images.unsplash.com/photo-1626082927389-8b36a5adf5f9"
-            },
-            {
-                "name": "Butter Vada Pav",
-                "price": 25,
-                "image": "https://images.unsplash.com/photo-1626082927597-9d68cfde7b3d"
-            },
-            {
-                "name": "Cheese Butter Vada Pav",
-                "price": 30,
-                "image": "https://images.unsplash.com/photo-1626082927762-5e12d0a5020a"
-            }
-        ]
-    },
-    {
-        "name": "Dabeli",
-        "items": [
-            {
-                "name": "Plain Dabeli",
-                "price": 20,
-                "image": "https://images.unsplash.com/photo-1617196034796-73aa98e6f5ad"
-            },
-            {
-                "name": "Butter Dabeli",
-                "price": 25,
-                "image": "https://images.unsplash.com/photo-1623870394984-3e8b05a5c1b1"
-            },
-            {
-                "name": "Cheese / Paneer Dabeli",
-                "price": 30,
-                "image": "https://images.unsplash.com/photo-1626082927653-66f1c9a1d06b"
-            }
-        ]
-    },
-    {
-        "name": "Burger",
-        "items": [
-            {
-                "name": "Veg Burger",
-                "price": 20,
-                "image": "https://images.unsplash.com/photo-1606755962773-0e6f23a8b56b"
-            },
-            {
-                "name": "Tikki Burger",
-                "price": 25,
-                "image": "https://images.unsplash.com/photo-1626082927590-013fa16b7a21"
-            },
-            {
-                "name": "Paneer Burger",
-                "price": 30,
-                "image": "https://images.unsplash.com/photo-1603064752734-3a4b3aafbd34"
-            },
-            {
-                "name": "Cheese Burger",
-                "price": 30,
-                "image": "https://images.unsplash.com/photo-1551782450-17144efb9c50"
-            },
-            {
-                "name": "Double Cheese Burger",
-                "price": 35,
-                "image": "https://images.unsplash.com/photo-1626082927692-7538f4c1a7dc"
-            }
-        ]
-    },
-    {
-        "name": "Pav Bhaji",
-        "items": [
-            {
-                "name": "Plain Pav Bhaji",
-                "price": 30,
-                "image": "https://images.unsplash.com/photo-1627308595190-bb7d31574d62"
-            },
-            {
-                "name": "Butter Pav Bhaji",
-                "price": 40,
-                "image": "https://images.unsplash.com/photo-1627308595178-620e4b0dfb4f"
-            },
-            {
-                "name": "Paneer Pav Bhaji",
-                "price": 50,
-                "image": "https://images.unsplash.com/photo-1627308595260-15d9aede4b34"
-            }
-        ]
-    },
-    {
-        "name": "Maska Bun",
-        "items": [
-            {
-                "name": "Butter Maska Bun",
-                "price": 20,
-                "image": "https://images.unsplash.com/photo-1601050690597-1c2ae76b25c5"
-            },
-            {
-                "name": "Paneer Maska Bun",
-                "price": 30,
-                "image": "https://images.unsplash.com/photo-1626082927713-5c7df22b50af"
-            },
-            {
-                "name": "Cheese Maska Bun",
-                "price": 40,
-                "image": "https://images.unsplash.com/photo-1626082927762-5e12d0a5020a"
-            }
-        ]
-    }
+  {
+    "name": "Pizza",
+    "items": [
+      {
+        "name": "Bread Pizza",
+        "price": 40,
+        "image": "https://media.istockphoto.com/id/1172660103/photo/bread-pizza.jpg?s=1024x1024&w=is&k=20&c=pxzyQzJFWxPDmXPW-JeOElKCiH7lV8MZwqmmoe1fkW4=",
+        "description": "Crispy toasted bread topped with tangy sauce, melted cheese, and fresh veggies — the perfect quick pizza snack."
+      },
+      {
+        "name": "Italian Double Cheese Pizza",
+        "price": 50,
+        "image": "https://images.pexels.com/photos/11176609/pexels-photo-11176609.jpeg",
+        "description": "A cheesy delight loaded with double mozzarella, Italian herbs, and classic tomato sauce for true pizza lovers."
+      }
+    ]
+  },
+  {
+    "name": "Sandwich",
+    "items": [
+      {
+        "name": "Veg Sandwich",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1523987355523-c7b5b0723c6e",
+        "description": "Freshly toasted sandwich filled with crunchy vegetables and creamy mayo — a light and tasty treat."
+      },
+      {
+        "name": "Aloo Mutter Sandwich",
+        "price": 30,
+        "image": "https://images.pexels.com/photos/236813/pexels-photo-236813.jpeg",
+        "description": "A flavorful mix of mashed potatoes and green peas stuffed between toasted bread slices."
+      },
+      {
+        "name": "Aloo Mutter Cheese Sandwich",
+        "price": 40,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "description": "Creamy cheese combined with spiced aloo-mutter filling — a satisfying fusion of Indian and continental flavors."
+      }
+    ]
+  },
+  {
+    "name": "Vada Pav",
+    "items": [
+      {
+        "name": "Plain Vada Pav",
+        "price": 20,
+        "image": "https://images.unsplash.com/photo-1548943487-a2e4d2366b06",
+        "description": "Mumbai’s favorite street food — spicy potato vada sandwiched in a soft pav with tangy chutneys."
+      },
+      {
+        "name": "Butter Vada Pav",
+        "price": 25,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "description": "Classic vada pav toasted in butter for extra flavor and crispiness — a true indulgence."
+      },
+      {
+        "name": "Cheese Butter Vada Pav",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1600891963939-c6c2fa3b5461",
+        "description": "A cheesy twist on the traditional vada pav — buttery, spicy, and irresistibly creamy."
+      }
+    ]
+  },
+  {
+    "name": "Dabeli",
+    "items": [
+      {
+        "name": "Plain Dabeli",
+        "price": 20,
+        "image": "https://images.unsplash.com/photo-1523987355523-c7b5b0723c6e",
+        "description": "Soft pav stuffed with spicy mashed potatoes, sweet chutney, and crunchy peanuts — a Kutch special!"
+      },
+      {
+        "name": "Butter Dabeli",
+        "price": 25,
+        "image": "https://images.unsplash.com/photo-1548943487-a2e4d2366b06",
+        "description": "Buttery toasted pav filled with flavorful dabeli masala and topped with sev and pomegranate."
+      },
+      {
+        "name": "Cheese / Paneer Dabeli",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1506089676908-3592f71ce6df",
+        "description": "Loaded with cheese or paneer for a creamy twist on the traditional dabeli — rich and delicious."
+      }
+    ]
+  },
+  {
+    "name": "Burger",
+    "items": [
+      {
+        "name": "Veg Burger",
+        "price": 20,
+        "image": "https://images.unsplash.com/photo-1562967916-eb82221dfb43",
+        "description": "A classic veggie burger with a crisp patty, lettuce, and creamy sauce in a soft bun."
+      },
+      {
+        "name": "Tikki Burger",
+        "price": 25,
+        "image": "https://images.unsplash.com/photo-1532634896-26909d0dcbde",
+        "description": "Golden fried potato tikki paired with tangy sauces and fresh veggies — an Indian-style burger treat."
+      },
+      {
+        "name": "Paneer Burger",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1528715473406-4ca0c99b1e27",
+        "description": "Soft bun loaded with crispy paneer patty, spicy mayo, and lettuce — a perfect protein-packed burger."
+      },
+      {
+        "name": "Cheese Burger",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1550317138-10000687a72b",
+        "description": "Melted cheese over a crispy patty with pickles and sauce — classic comfort food."
+      },
+      {
+        "name": "Double Cheese Burger",
+        "price": 35,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "description": "Double the cheese, double the fun — rich, creamy, and loaded with flavor in every bite."
+      }
+    ]
+  },
+  {
+    "name": "Pav Bhaji",
+    "items": [
+      {
+        "name": "Plain Pav Bhaji",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1627308595190-bb7d31574d62",
+        "description": "A spicy, mashed vegetable curry served with soft pav — the street food classic of Mumbai."
+      },
+      {
+        "name": "Butter Pav Bhaji",
+        "price": 40,
+        "image": "https://images.pexels.com/photos/17433352/pexels-photo-17433352.jpeg",
+        "description": "Loaded with extra butter for that rich, creamy taste — the ultimate comfort food."
+      },
+      {
+        "name": "Paneer Pav Bhaji",
+        "price": 50,
+        "image": "https://images.unsplash.com/photo-1519864602351-4186244efb8c",
+        "description": "A royal version of pav bhaji topped with grated paneer and a buttery finish."
+      }
+    ]
+  },
+  {
+    "name": "Maska Bun",
+    "items": [
+      {
+        "name": "Butter Maska Bun",
+        "price": 20,
+        "image": "https://images.unsplash.com/photo-1523987355523-c7b5b0723c6e",
+        "description": "Soft bun spread generously with butter — the perfect companion for your chai time."
+      },
+      {
+        "name": "Paneer Maska Bun",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1528715473406-4ca0c99b1e27",
+        "description": "Fluffy bun filled with spiced paneer and buttery goodness — simple yet satisfying."
+      },
+      {
+        "name": "Cheese Maska Bun",
+        "price": 40,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "description": "Soft, buttery bun layered with rich melted cheese — melts in your mouth with every bite."
+      }
+    ]
+  }
 ]
