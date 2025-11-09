@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     },
   };
 
-  const bestSellers = await fetch('./data/topSeller.json').then(async (data) => await data.json())
+  const bestSellers = await fetch('../../data/topSeller.json').then(async (data) => await data.json())
 
   const specialsContainer = document.getElementById("specials-container");
 
@@ -40,7 +40,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const includeFooter = document.getElementById("footer");
 
   if (includeNavbar) {
-    fetch("components/navbar.html")
+    let navbarPath = (window.location.pathname=='/')?'components/navbar.html':'../components/navbar.html'
+    fetch(navbarPath)
       .then(response => response.text())
       .then(data => {
         includeNavbar.innerHTML = data;
@@ -48,7 +49,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       .catch(error => console.error("Navbar load error:", error));
   }
   if (includeFooter) {
-    fetch("components/footer.html")
+    let footerPath = (window.location.pathname=='/')?'components/footer.html':'../components/footer.html'
+    fetch(footerPath)
       .then(response => response.text())
       .then(data => {
         includeFooter.innerHTML = data;

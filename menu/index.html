@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu - Shri Mahakaleshwar Vada Pav & Snacks</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="./assets/fonts/poppins.css" rel="stylesheet" />
-    <script src="./assets/js/tailwind.min.js"></script>
-    <script src='./assets/js/main.js'></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="../assets/fonts/poppins.css" rel="stylesheet" />
+    <script src="../assets/js/tailwind.min.js"></script>
+    <script src='../assets/js/main.js'></script>
 
     <style>
         body {
@@ -72,13 +72,14 @@
             <!-- Menu Sections -->
             <div id="menuContainer" class="space-y-16"></div>
         </div>
+        <div id="footer"></div>
     </main>
 
     <!-- Script -->
     <script>
         async function loadMenu() {
             try {
-                const response = await fetch("./data/menu.json");
+                const response = await fetch("../data/menu.json");
                 const data = await response.json();
 
                 const categories = data.map((section) => section.name);
